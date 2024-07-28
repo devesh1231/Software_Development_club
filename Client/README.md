@@ -16,4 +16,4 @@ Currently, two official plugins are available:
 
 2. in firestore it only stores it doesnt check the password or encryption things, like password must be strong it doesnt care about that .
 
-3. Integrating Google Auth using firebase
+3. Integrating Google Auth using firebase in signUp and login Page
