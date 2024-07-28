@@ -15,3 +15,5 @@ Currently, two official plugins are available:
 1. fireauth provides authentication and you can login through only if you have fireauth registered
 
 2. in firestore it only stores it doesnt check the password or encryption things, like password must be strong it doesnt care about that .
+
+3. Integrating Google Auth using firebase
