@@ -12,6 +12,9 @@ import { auth } from './components/firebase';
 import Login from './components/login' ;
 import SignUp from './components/register' ;
 import Profile from './components/profile';
+import Home from './pages/Home.jsx';
+import Header from './components/common/Header.jsx';
+import Footer from './components/common/Footer.jsx';
 
 function App() {
   
@@ -23,14 +26,20 @@ function App() {
   // })
 
   return (
-    <Router>
-      <Routes>
+    <div className="flex flex-col min-h-screen">
+    <Header/>
+
+     <Router>
+       <Routes>
         {/* <Route path='/' element={ user? <Navigate to="/profile"/> : <Login/> } /> */}
-        <Route path='/' element={<Login/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/register' element={<SignUp/>} />
         <Route path='/profile' element={<Profile/>} />
-      </Routes>
-    </Router>
+       </Routes>
+     </Router>
+
+    <Footer/>
+    </div>
   )
 }
 

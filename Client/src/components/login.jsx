@@ -27,32 +27,33 @@ function Login() {
 
 
     return (
-        <div className="form-container">
-        <form onSubmit={handleSubmit}>
-            <h3>Login Page</h3>
-
-            <div>
-                <lable>Email</lable>
+        <div className="h-screen flex items-center justify-center border border-black">
+        <form onSubmit={handleSubmit} className="bg-white p-10 rounded-md   shadow-md flex-col items-center justify-center border border-black">
+           
                 <input
                  type="email"
                  placeholder="Enter Email"
                  onChange={(e) => setEmail(e.target.value)}
                  required 
+                 className="items-center justify-center rounded-sm border border-black text-sm p-2"
                 />
-            </div>
+            
 
             <div>
-                <lable>Password</lable>
+               
                 <input
                  type="password"
                  placeholder="Enter your Password"
                  onChange={(e) => setPassword(e.target.value)}
                  required
+                 className="items-center justify-center rounded-sm border border-black mt-2 text-sm p-2 mb-2"
                 />
             </div>
             <SignInWithGoogle/>
             <div>
-                <button>
+                <button 
+                  className="border bg-blue-500 px-4 py-1 mt-4 rounded-md text-xs text-white"
+                 >
                     Login
                 </button>
             </div>

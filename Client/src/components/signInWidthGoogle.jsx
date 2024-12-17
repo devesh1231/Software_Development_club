@@ -21,7 +21,7 @@ function SignInWithGoogle() {
        <>
        <p style={{display:"flex", justifyContent:"center", fontSize:"10px", fontFamily:"sans-serif"}}>---or continue with</p>
        <div style={{display:"flex", justifyContent:"center", cursor:"pointer"}} onClick={googleLogin}>
-         <img src={googleImage} width={"60%"}/>
+         <img src={googleImage} className="w-[100px]"/>
        </div>
        </>
     )

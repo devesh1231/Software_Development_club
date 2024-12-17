@@ -20,8 +20,9 @@ function Profile() {
     
     return(
         <>
+        <p className="text-blue-600">Welcome</p>
          Welcome to SDC Club 
-         <div onClick={logout}>
+         <div onClick={logout} >
             <button>
                 Log Out
             </button>
