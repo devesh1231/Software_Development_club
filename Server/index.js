@@ -1,17 +1,26 @@
-// index.js
+const express = require("express");
+const connectDB = require("./config/db");
+const morgan = require("morgan");
+const logger = require("./config/logger"); 
+const blogRoutes = require("./routes/blog.routes");
 
-// Import express module
-const express = require('express');
-
-// Create an instance of express
 const app = express();
+const PORT = process.env.PORT || 3000;
 
-// Define a basic route
-app.get('/', (req, res) => {
-  res.send('Hello, World! Server is running on port 3000');
-});
+// Middleware
+app.use(express.json());
+app.use(morgan("dev"));
+// Log every incoming request
+// app.use((req, res, next) => {
+//     logger.info(`${req.method} ${req.url}`);
+//     next();
+// });
 
-// Start the server on port 3000
-app.listen(3000, () => {
-  console.log('Server is running on http://localhost:3000');
-});
+// Connect to MongoDB
+connectDB();
+
+// Routes
+app.use("/api/admin/blogs", blogRoutes);
+
+// Start the server
+app.listen(PORT, () => logger.info(`Server running on http://localhost:${PORT}`));
