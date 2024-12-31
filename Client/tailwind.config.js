@@ -20,17 +20,23 @@ export default {
         rale:['Raleway', 'sans-serif']
       } ,
       keyframes: {
-        moveX: {
-          '0%': { transform: 'translateX(0)' },
-          '50%': { transform: 'translateX(200px)' },
-          '100%': { transform: 'translateX(0)' },
+        carouselSlide: {
+          '0%': { opacity: '0', transform: 'translateX(100%)' },
+          '20%': { opacity: '1', transform: 'translateX(0)' },
+          '80%': { opacity: '1', transform: 'translateX(0)' },
+          '100%': { opacity: '0', transform: 'translateX(-100%)' },
         },
       },
       animation: {
-        moveX: 'moveX 4s ease-in-out infinite',
+        carouselSlide: 'carouselSlide 12s infinite ease-in-out',
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')], 
+  daisyui: {
+    themes: ["emerald"],
+  }
+  
+  
 }
 

@@ -26,7 +26,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="w-[70%] mx-auto mt-10 mb-10">
+    <section className="w-[70%] mx-auto mt-10 bg-slate-100">
       <h2 className="text-4xl font-bold font-rale text-blue-600 text-center mb-8">Frequently Asked Questions</h2>
       <div className="space-y-4 ">
         {faqs.map((faq, index) => (

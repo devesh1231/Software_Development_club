@@ -4,7 +4,7 @@ function Footer() {
     return(
         
         
-            <footer className="bg-[#1f2737] w-full px-4 py-8 md:px-14 md:py-10 sticky mt-[150rem]">
+            <footer className="bg-[#1f2737] w-full px-4 py-8 md:px-14 md:py-10 ">
             {/* Top component */}
             <div className="flex flex-col items-start gap-8 md:flex-row md:items-start md:gap-16 lg:gap-36">
               {/* Logo */}

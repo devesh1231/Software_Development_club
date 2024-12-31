@@ -15,6 +15,7 @@ import Profile from './components/profile';
 import Home from './pages/Home.jsx';
 import Header from './components/common/Header.jsx';
 import Footer from './components/common/Footer.jsx';
+import Blog from './pages/Blog.jsx';
 
 function App() {
   
@@ -26,19 +27,23 @@ function App() {
   // })
 
   return (
-    <div className="flex flex-col min-h-screen">
-    <Header/>
+    <div className="flex flex-col min-h-screen bg-white">
+     <Header/>
 
-     <Router>
+    
        <Routes>
         {/* <Route path='/' element={ user? <Navigate to="/profile"/> : <Login/> } /> */}
         <Route path='/' element={<Home/>}/>
+        <Route path='/blog' element={<Blog/>} />
         <Route path='/register' element={<SignUp/>} />
         <Route path='/profile' element={<Profile/>} />
        </Routes>
-     </Router>
-
-    <Footer/>
+    
+    
+    
+     {/* <Footer/> */}
+    
+    
     </div>
   )
 }

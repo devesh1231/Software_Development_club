@@ -17,10 +17,10 @@ import FAQ from "../components/common/Faq.jsx" ;
 function Home(){
   
   return (
-     <div className="bg-[#EEF0EB] h-[500px]">
+     <div className="">
        
        {/* Banner */}
-       <div className="flex flex-col md:flex-row items-center justify-between p-20">
+       <div className="flex flex-col md:flex-row items-center justify-between p-20 ">
        
        {/* Left part */}
        <section className=" w-auto md:w-[50%]">
@@ -38,9 +38,9 @@ function Home(){
 
       {/* main section questionaries */}
 
-      <div class="main-section bg-gray-100 p-1 ">
+      <div class="main-section bg-gray-100 mt-0 p-10">
         
-        <div class="container mx-auto px-6 lg:w-[1080px] mt-20">
+        <div class="container mx-auto px-6 lg:w-[1080px]">
         <h2 class="text-3xl font-bold text-center text-blue-600 mb-8 font-rale">Why Coding Matters</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-20 mb-20">
@@ -73,27 +73,11 @@ function Home(){
         </div>
 
       </div>
-
-     
     
-    {/* <marquee  scrollamount="15" behavior="scroll" direction="right" className="bg-white ">
-      <img src={google_logo} className="inline-block h-10 w-36 mr-20"/>
-      <img src={microsoft} className="inline-block h-10 w-36 mr-20"/>
-      <img src={atlassian} className="inline-block h-10 w-36 mr-20"/>
-      <img src={amazon} className="inline-block h-10 w-36 mr-20"/>
-      <img src={netflix} className="inline-block h-10 w-36 mr-20"/>
-      <img src={meta} className="inline-block h-10 w-36 mr-20"/>
-      <img src={blackrock} className="inline-block h-10 w-36 mr-20"/>
-      <img src={samsung} className="inline-block h-10 w-36 mr-20"/>
-
      
-    </marquee> */}
-
-    {/* Testimonial */} 
-     
-  <section className="flex flex-col justify-center gap-20 mt-24 w-[100%] mx-auto rounded-lg overflow-hidden bg-white">
+  <section className="flex mb-10 gap-20 w-[100%] mx-auto rounded-lg overflow-hidden bg-white">
   
-  <marquee  scrollamount="15" behavior="scroll" direction="right" className="bg-white ">
+  <marquee  scrollamount="15" behavior="scroll" direction="right" className="bg-white mb-0 ">
       <img src={google_logo} className="inline-block h-10 w-36 mr-20"/>
       <img src={microsoft} className="inline-block h-10 w-36 mr-20"/>
       <img src={atlassian} className="inline-block h-10 w-36 mr-20"/>
@@ -106,79 +90,60 @@ function Home(){
      
     </marquee>
   
-  <h2 className="text-5xl font-bold text-center text-blue-600 mb-8 font-rale mt-10">
+  
+
+  </section>
+
+
+  <h2 className="text-3xl font-semibold text-center p-5 text-blue-600 font-rale bg-white">
     Testimonial
   </h2>
 
-  {/* Comment 1 */}
-  <div className="flex justify-start ml-24 ">
-    <section className="flex flex-row justify-between text-[#153243] bg-white max-w-3xl rounded-tr-[90px] h-[300px] shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-2">
-      {/* Text */}
-      <div className="p-10 w-[60%]">
-        <h1 className="font-rale text-[#153243] text-2xl mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-        <p className="font-rale text-[#153243] text-md mb-4">
-          <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi expedita delectus placeat sit sed totam culpa nihil enim, cumque et veniam non dolore, magni libero vero distinctio, eos unde sunt.</i>
-        </p>
-        <i className="text-[#153243]">------ Akash Dubey (Working as Full Stack Developer)</i>
-      </div>
-      {/* Image */}
-      <div className="overflow-hidden">
-        <img
-          src={akash}
-          alt="akashFeedback"
-          className="rounded-tr-[90px] rounded-bl-[90px] h-[300px] w-[300px] object-fill transform hover:scale-105 transition duration-500"
-        />
-      </div>
-    </section>
-  </div>
+  <section className="flex items-center justify-center  bg-white "> 
 
-   {/* Comment 1 */}
-   <div className="flex justify-end mr-24 ">
-    <section className="flex flex-row justify-between bg-white max-w-3xl rounded-tr-[90px] h-[300px] shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-2">
-      {/* Text */}
-      <div className="p-10 w-[60%]">
-        <h1 className="font-rale text-[#153243] text-2xl mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-        <p className="font-rale text-[#153243] text-md mb-4">
-          <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi expedita delectus placeat sit sed totam culpa nihil enim, cumque et veniam non dolore, magni libero vero distinctio, eos unde sunt.</i>
-        </p>
-        <i className="text-[#153243]">------ Akash Dubey (Working as Full Stack Developer)</i>
+    <div className="carousel max-w-4xl mt-5 mb-5 p-5 rounded-lg"> 
+      
+      <div id="item1" className="carousel-item w-full flex items-start justify-center gap-5 ">
+        <div><img src={akash} alt="akash" className="w-[200px] h-[250px] rounded-md shadow-xl"/></div>
+        <div className="w-[60%] leading-relaxed mt-3">
+          <p className="text-2xl font-rale text-justify mb-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut eaque repellendus eligendi dolores exercitationem neque culpa, hic in adipisci, impedit nisi sequi similique, fugiat provident rem saepe consequatur ratione?"</p>
+          <i>---Akash Dubey workign as Full Stack Intern</i>
+        </div>
       </div>
-      {/* Image */}
-      <div className="overflow-hidden">
-        <img
-          src={devesh}
-          alt="akashFeedback"
-          className="rounded-tr-[90px] rounded-bl-[90px] h-[300px] w-[300px] object-fill transform hover:scale-105 transition duration-500"
-        />
-      </div>
-    </section>
-  </div>
 
-   {/* Comment 1 */}
-   <div className="flex justify-start ml-24 mb-10 ">
-    <section className="flex flex-row justify-between bg-white max-w-3xl rounded-tr-[90px] h-[300px] shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-2">
-      {/* Text */}
-      <div className="p-10 w-[60%]">
-        <h1 className="font-rale text-[#153243] text-2xl mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-        <p className="font-rale text-[#153243] text-md mb-4">
-          <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi expedita delectus placeat sit sed totam culpa nihil enim, cumque et veniam non dolore, magni libero vero distinctio, eos unde sunt.</i>
-        </p>
-        <i className="text-[#153243]">------ Akash Dubey (Working as Full Stack Developer)</i>
+      <div id="item2" className="carousel-item w-full flex items-start justify-center gap-5">
+        <div><img src={akash2} alt="akash" className="w-[200px] h-[250px] rounded-md shadow-xl"/></div>
+        <div className="w-[60%] leading-relaxed mt-3">
+          <p className="text-2xl font-rale text-justify mb-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut eaque repellendus eligendi dolores exercitationem neque culpa, hic in adipisci, impedit nisi sequi similique, fugiat provident rem saepe consequatur ratione?"</p>
+          <i>---Akash Dubey workign as Full Stack Intern</i>
+        </div>
       </div>
-      {/* Image */}
-      <div className="overflow-hidden">
-        <img
-          src={akash2}
-          alt="akashFeedback"
-          className="rounded-tr-[90px] rounded-bl-[90px] h-[300px] w-[300px] object-fill transform hover:scale-105 transition duration-500"
-        />
-      </div>
-    </section>
-  </div>
-</section>
 
+      <div id="item3" className="carousel-item w-full flex items-start justify-center gap-5">
+        <div><img src={devesh} alt="akash" className="w-[200px] h-[250px] rounded-md shadow-xl"/></div>
+        <div className="w-[60%] leading-relaxed mt-3">
+          <p className="text-2xl font-rale text-justify mb-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut eaque repellendus eligendi dolores exercitationem neque culpa, hic in adipisci, impedit nisi sequi similique, fugiat provident rem saepe consequatur ratione?"</p>
+          <i>---Akash Dubey workign as Full Stack Intern</i>
+        </div>
+      </div>
+      
+    </div>
+
+  </section>
+
+<div className="flex w-full justify-center gap-2 py-2 bg-white h-[100px]">
+  <a href="#item1" className="btn btn-xs">1</a>
+  <a href="#item2" className="btn btn-xs">2</a>
+  <a href="#item3" className="btn btn-xs">3</a>
+  
+</div>
+
+  <div className="bg-slate-100 p-10">
    <FAQ/>
+  </div>
    
+
+   <Footer/>
    </div>
    
     )

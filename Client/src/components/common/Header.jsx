@@ -1,9 +1,10 @@
-import { useState , Link} from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header(){
     return(
        <header className="w-auto bg-[#153243]" >
-            <nav className="p-4 bg-[#153243] max-w-5xl mx-auto ">
+            <nav className="p-4 bg-[#153243] max-w-5xl mx-auto h-[100px]">
                 <span className="text-white text-[30px] font-bold mr-14 font-rale items-center">SDC Club</span> 
                 <input 
                  placeholder="type to search..."
@@ -11,7 +12,10 @@ function Header(){
                 /> 
 
                 <span className="text-white mr-10 font-rale">Home</span>
-                <span className="text-white mr-10 font-rale">Blog</span>
+                <Link to="/blog">
+                 <span className="text-white mr-10 font-rale">Blog</span>
+                </Link>
+               
                 <span className="text-white mr-10 font-rale">Apti/DSA</span>
                 
                 <span className="text-white mr-10 font-rale">Contact</span>
