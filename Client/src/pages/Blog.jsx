@@ -1,8 +1,16 @@
+import { useEffect } from "react";
 import img1 from "../assets/blog/img1.avif" ;
 import img2 from "../assets/blog/img2.avif" ;
 import img3 from "../assets/blog/img3.avif" ;
+import { getAllBlog } from "../services/operations/blog.js";
 
 function Blog(){
+
+    useEffect(()=>{
+      getAllBlog(); 
+    },[])
+   
+    
     return(
         <section className="grid grid-cols-2 gap-x-5 gap-y-5 max-w-6xl mx-auto mt-1">
            <div className=" flex flex-col items-center justify-center">
