@@ -16,6 +16,7 @@ import Home from './pages/Home.jsx';
 import Header from './components/common/Header.jsx';
 import Footer from './components/common/Footer.jsx';
 import Blog from './pages/Blog.jsx';
+import { Apti } from './pages/Apti.jsx';
 
 function App() {
   
@@ -37,6 +38,7 @@ function App() {
         <Route path='/blog' element={<Blog/>} />
         <Route path='/register' element={<SignUp/>} />
         <Route path='/profile' element={<Profile/>} />
+        <Route path='/apti' element={<Apti/>} />
        </Routes>
     
     
